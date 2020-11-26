@@ -1,0 +1,10 @@
+/.idea/
+**/*.iml
+**/target/
+/dubbo-es-parent.iml
+/dubbo-consumer/dubbo-consumer.iml
+/dubbo-provider/dubbo-provider.iml
+/dubbo-es-provider/dubbo-es-provider.iml
+/dubbo-consumer/target/
+/dubbo-provider/target/
+/dubbo-consumer/tree.txt
