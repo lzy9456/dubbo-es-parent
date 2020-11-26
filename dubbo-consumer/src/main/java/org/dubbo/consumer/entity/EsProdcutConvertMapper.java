@@ -19,6 +19,16 @@ import org.mapstruct.factory.Mappers;
 public interface EsProdcutConvertMapper {
     EsProdcutConvertMapper INSTANCE = Mappers.getMapper(EsProdcutConvertMapper.class);
 
+
+    /**
+     * @Description
+     *      复制转换vo to bo
+     *      Mappings配置对应属性名
+     * @param vo
+     * @Return my.dubbo.provider.es.EsProduct
+     * @Author _lizy
+     * @Date 2020/11/26 19:13
+     */
     @Mappings({
             @Mapping(source = "id", target = "id"),
             @Mapping(source = "married", target = "married"),
@@ -26,5 +36,5 @@ public interface EsProdcutConvertMapper {
             @Mapping(source = "age", target = "age"),
             @Mapping(source = "name", target = "name")
     })
-    EsProduct vo2Bo(EsProductVO bo);
+    EsProduct vo2Bo(EsProductVO vo);
 }

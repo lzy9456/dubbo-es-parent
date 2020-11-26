@@ -1,10 +1,19 @@
 ###dubbo+sprintboot+es - helloworld项目
-springboot2.3.0 + dubbo sprint boot2.7.7 + mybatis plus3.4.0 +zookeeper3.4.9
+* springboot2.3.0 + mybatis plus3.4.0
 
-+es(ElasticSearch)
+* dubbo sprint boot2.7.7 + [zookeeper3.4.9 or zookeeper3.4.13 ...]
 
-+logstash logback(elk)
+* es(ElasticSearch7.6.2)
 
+* logstash logback5.3(elk)
+
+#####Other Tools：
+*    mapstruct  -1.3.0Final
+*    fastjson   -1.2.68
+*    guava  -1.18.0
+*    lombok -1.18.12
+*    commons-lang3 -3.10
+    
 >快速开始（QuickStart）
 >* 启动zookeeper，测试zookeeper3.3.6 or zookeeper3.4.13正常
 >    
@@ -54,5 +63,30 @@ springboot2.3.0 + dubbo sprint boot2.7.7 + mybatis plus3.4.0 +zookeeper3.4.9
 * 添加logback-spring.xml
 
     eg: dubbo-es\dubbo-consumer\src\main\resources\logback-spring.xml
+    
+    
+####mapstruct
+> java复制转换工具类，eg：VO convert to DTO
+
+* 添加依赖(pom.xml)
+            
+            <!-- mapstruct  vo convert dto -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            
+            
+* 添加转换类
+
+        eg: org.dubbo.consumer.entity.EsProdcutConvertMapper
+
 
 
