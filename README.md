@@ -1,4 +1,4 @@
-### dubbo+sprintboot+es - helloworld项目
+### dubbo+sprintboot+es - helloworld
 * springboot2.3.0 + mybatis plus3.4.0
 
 * dubbo sprint boot2.7.7 + [zookeeper3.4.9 or zookeeper3.4.13 ...]
@@ -7,7 +7,7 @@
 
 * logstash logback5.3(elk)
 
-##### Other Tools：
+#### Other Tools：
 *    mapstruct  -1.3.0Final
 *    fastjson   -1.2.68
 *    guava  -1.18.0
@@ -29,11 +29,11 @@
 >* 访问dubbo-consumer，EsProductController接口eg：http://127.0.0.1:8080/product/create
 
 
-#### mybatis plus3.4.0
+### mybatis plus3.4.0
     mybatis、分页、generator代码生成
 
 
-#### ElasticSearch(es)7.6.2
+### ElasticSearch(es)7.6.2
 >* 直接在需使用es的子项目中添加依赖包即可, 
    顶层项目spring-boot-starter-parent已添加spring-boot-starter-data-elasticsearch依赖
 
@@ -46,7 +46,7 @@
 
 
 
-#### logstash logback
+### logstash logback
 > 项目日志输出logstash(elk)
 > 不需要直接删除以下内容
 
@@ -65,7 +65,7 @@
     eg: dubbo-es\dubbo-consumer\src\main\resources\logback-spring.xml
     
     
-#### mapstruct
+### mapstruct
 > java复制转换工具类，eg：VO convert to DTO
 
 * 添加依赖(pom.xml)
